@@ -21,8 +21,8 @@ const postData = (url, data) => {
 const contentfulClient = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID || 'ssm01dvlvmav',
   accessToken:
-    process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN || 'my-access-token',
-  host: process.env.REACT_APP_CONTENTFUL_HOST
+      process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN || 'c7db192089f4a038b7b0a018be644efa631f32c3068f10f1fdb00ac9f0bf3907',
+    host: process.env.REACT_APP_CONTENTFUL_HOST || 'preview.contentful.com'
 });
 
 const App = props => (
