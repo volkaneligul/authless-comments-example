@@ -20,7 +20,7 @@ class MyCommentBox extends React.Component {
 
         return this.props.contentfulClient.getEntries({
             'order': 'sys.createdAt', // important for determining nested comments
-            'content_type': 'comment',
+            'content_type': 'body',
             'fields.subject': this.props.subjectId,
         }).then( response => {
 
